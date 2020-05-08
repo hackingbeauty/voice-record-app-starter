@@ -1,4 +1,4 @@
-:local(.standardRecordView) {
+:local(.styles) {
   height: 100%;
   background: $darkGrey35;
   box-shadow: none;
@@ -93,45 +93,4 @@
     }
 
   }
-}
-
-
-:local(.iosRecordView) {
-  overflow: hidden;
-  position: relative;
-
-  .date {
-    font-size: 14px;
-    text-align: center;
-    margin-top: 5px;
-  }
-
-  .visualization-scrim {
-    margin-top: -204px;
-  }
-
-  .bottom-navigation {
-    display: none;
-  }
-
-  .ios-record-view {
-    position: relative;
-    background: $darkGrey35;
-    height: 89vh;
-    z-index: 1;
-  }
-
-  .is-recording-controls,
-  .microphone-btn  {
-    position: absolute;
-  }
-
-  .microphone-btn  {
-    bottom: -171px;
-  }
-
-  .is-recording-controls {
-    bottom: -158px;
-  }
-
 }
