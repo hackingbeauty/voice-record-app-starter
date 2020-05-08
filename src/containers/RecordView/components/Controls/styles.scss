@@ -1,0 +1,33 @@
+:local(.styles) {
+  position: relative;
+
+  .is-recording-controls {
+    width: 300px;
+    left: 30px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    & > div {
+      display: inline-block;
+    }
+
+    .pause-or-record-btn {
+      margin: 0 15px;
+    }
+  }
+
+  .microphone-btn {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: 500px) {
+
+    .is-recording-controls {
+      left: 25%;
+    }
+
+  }
+
+}

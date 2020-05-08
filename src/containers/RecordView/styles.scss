@@ -1,0 +1,137 @@
+:local(.standardRecordView) {
+  height: 100%;
+  background: $darkGrey35;
+  box-shadow: none;
+  position: relative;
+  overflow: hidden;
+
+  .bottom-navigation {
+    position: absolute;
+  }
+
+  .record-view-container {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+  }
+
+  .visualization,
+  .visualization-scrim {
+    position: absolute;
+    bottom: -15px;
+    width: 100%;
+  }
+
+  .arrow-icon {
+    margin-left: -10px;
+  }
+
+  .microphone-icon {
+    position: absolute;
+    top: 16px;
+    right: 25px;
+  }
+
+  .bottom-section {
+    position: relative;
+    top: 50px;
+  }
+
+  .date {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .message {
+    font-size: 16px;
+
+    em {
+      animation: blinker 5s linear infinite;
+      font-weight: bold;
+    }
+  }
+
+  .is-recording-controls,
+  .microphone-btn {
+    position: absolute;
+  }
+
+  .is-recording-controls {
+    bottom: -20px;
+  }
+
+  .microphone-btn {
+    bottom: -29px;
+  }
+
+  @media (min-width: 900px) {
+    width: 600px;
+    height: 475px;
+
+    .record-view-container {
+      top: 45.5%;
+      transform: translateY(-50%);
+    }
+
+    .visualization,
+    .visualization-scrim {
+      top: -94px;
+    }
+
+    .bottom-section {
+      top: 90px;
+    }
+
+    .microphone-icon {
+      top: 20px;
+      right: 25px;
+    }
+
+    .message {
+      font-size: 21px;
+    }
+
+  }
+}
+
+
+:local(.iosRecordView) {
+  overflow: hidden;
+  position: relative;
+
+  .date {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .visualization-scrim {
+    margin-top: -204px;
+  }
+
+  .bottom-navigation {
+    display: none;
+  }
+
+  .ios-record-view {
+    position: relative;
+    background: $darkGrey35;
+    height: 89vh;
+    z-index: 1;
+  }
+
+  .is-recording-controls,
+  .microphone-btn  {
+    position: absolute;
+  }
+
+  .microphone-btn  {
+    bottom: -171px;
+  }
+
+  .is-recording-controls {
+    bottom: -158px;
+  }
+
+}

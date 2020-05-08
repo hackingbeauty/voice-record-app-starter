@@ -1,0 +1,29 @@
+:local(.styles) {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+
+  .dropdown {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    z-index: 2;
+  }
+
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
+
+  .avatar {
+    border: 2px solid $white;
+    margin-top: -8px;
+  }
+
+  @media (min-width: 900px) {
+    .dropdown {
+      right: 20px;
+    }
+  }
+}
