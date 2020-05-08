@@ -9,7 +9,7 @@
     "build": "webpack --progress --verbose --colors --display-error-details --config webpack/common.config.babel.js",
     "lint": "eslint src",
     "precommit": "lint-staged",
-    "start": "cross-env NODE_ENV=development node bin/launch-server.js",
+    "start": "cross-env NODE_ENV=development node bin/launch-server.js"
   },
   "repository": {
     "type": "git",
@@ -64,8 +64,11 @@
   "dependencies": {
     "@material-ui/core": "^3.0.3",
     "@material-ui/icons": "^3.0.1",
-    "prop-types": "^15.6.1"
-
+    "prop-types": "^15.6.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-mic": "^12.4.6",
+    "react-router": "^5.1.2"
   },
   "lint-staged": {
     "./src/**/*.js": [
