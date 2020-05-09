@@ -70,7 +70,7 @@ class AudioVisualRecorder extends Component {
                 onStop={this.onStop}
                 onSave={this.onSave}
                 onData={this.onData}
-                strokeColor="#0096ef"
+                strokeColor={getStyles('lightBlue')}
               />
               <div id="oscilloscope-scrim">
                 {!isRecording && <div id="scrim" />}
