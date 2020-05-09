@@ -65,7 +65,7 @@ class AudioVisualRecorder extends Component {
               <ReactMic
                 className="oscilloscope"
                 record={isRecording}
-                backgroundColor={getStyles('$lightBlue')}
+                backgroundColor={getStyles('chalkGrey')}
                 visualSetting="sinewave"
                 onStop={this.onStop}
                 onSave={this.onSave}
