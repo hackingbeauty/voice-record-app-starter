@@ -19,7 +19,11 @@ class AudioVisualRecorder extends Component {
     }
   }
 
-  onSave=(blobObject) => {
+  onData= (recordedBlob) => {
+    console.log('onData called', recordedBlob)
+  }
+
+  onSave= (blobObject) => {
     this.setState({ downloadLinkURL: blobObject.blobURL })
   }
 
