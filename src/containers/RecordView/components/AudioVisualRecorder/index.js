@@ -7,6 +7,7 @@ import Typography           from '@material-ui/core/Typography'
 import MicrophoneIcon       from '@material-ui/icons/Mic'
 import StopIcon             from '@material-ui/icons/Stop'
 import CloudDownloadIcon    from '@material-ui/icons/CloudDownload'
+import { getStyles }        from 'core/libs/lib-style-helpers'
 import { styles }           from './styles.scss'
 
 class AudioVisualRecorder extends Component {
@@ -64,9 +65,8 @@ class AudioVisualRecorder extends Component {
               <ReactMic
                 className="oscilloscope"
                 record={isRecording}
-                backgroundColor="#333333"
+                backgroundColor={getStyles('$lightBlue')}
                 visualSetting="sinewave"
-                audioBitsPerSecond={128000}
                 onStop={this.onStop}
                 onSave={this.onSave}
                 onData={this.onData}
